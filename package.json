@@ -1,0 +1,24 @@
+{
+  "name": "postcss-aspect-ratio-polyfill",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://takamoso@github.com/takamoso/postcss-aspect-ratio-polyfill.git"
+  },
+  "keywords": [],
+  "author": "takamoso",
+  "license": "MIT",
+  "engines": {
+    "node": ">=10.0.0"
+  },
+  "bugs": {
+    "url": "https://github.com/takamoso/postcss-aspect-ratio-polyfill/issues"
+  },
+  "homepage": "https://github.com/takamoso/postcss-aspect-ratio-polyfill#readme",
+  "dependencies": {
+    "number-precision": "^1.5.0",
+    "postcss": "^7.0.32"
+  }
+}

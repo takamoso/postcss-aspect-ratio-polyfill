@@ -14,7 +14,7 @@ npm i postcss-aspect-ratio-polyfill
 const postcss = require('postcss')
 
 const output = postcss()
-  .use(require('postcss-aspect-ratio-mini'))
+  .use(require('postcss-aspect-ratio-polyfill'))
   .process(require('fs').readFileSync('input.css', 'utf8'))
   .css
 ```

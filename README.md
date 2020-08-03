@@ -5,7 +5,7 @@ A PostCSS plugin to support [`aspect-ratio`](https://drafts.csswg.org/css-sizing
 ## Install
 
 ```bash
-npm i postcss-aspect-ratio-polyfill
+npm i -D postcss-aspect-ratio-polyfill
 ```
 
 ## Usage

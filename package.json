@@ -26,5 +26,9 @@
   "dependencies": {
     "number-precision": "^1.5.0",
     "postcss": "^7.0.32"
+  },
+  "devDependencies": {
+    "glob": "^7.1.6",
+    "tape": "^5.0.1"
   }
 }

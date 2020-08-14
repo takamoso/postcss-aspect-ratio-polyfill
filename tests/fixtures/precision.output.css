@@ -1,0 +1,10 @@
+.test::before {
+  float: left;
+  padding-top: 110%;
+  content: '';
+}
+.test::after {
+  display: block;
+  content: '';
+  clear: both;
+}

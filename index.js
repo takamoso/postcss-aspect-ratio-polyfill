@@ -5,10 +5,10 @@ module.exports = postcss.plugin('postcss-aspect-ratio-polyfill', options => css 
   css.walkDecls('aspect-ratio', decl => {
     const rule = decl.parent
     const selector = rule.selector
-    const beforeRule = postcss.rule({selector: `${selector}::before`})
-    const afterRule = postcss.rule({selector: `${selector}::after`})
+    const beforeRule = postcss.rule({selector: `${selector}::before`, raws: {after: rule.raws.after, semicolon: rule.raws.semicolon}})
+    const afterRule = postcss.rule({selector: `${selector}::after`, raws: {before: rule.raws.after, after: rule.raws.after, semicolon: rule.raws.semicolon}})
     const ratio = decl.value.replace(/['"]?((?:\d*\.?\d*)?)(?:\s*[\:\|\/]\s*)(\d*\.?\d*)['"]?/g, (match, width, height) => np.times(np.divide(height, width), 100) + '%')
-
+    
     beforeRule.append([
       postcss.decl({prop: 'float', value: 'left', raws: decl.raws}),
       postcss.decl({prop: 'padding-top', value: ratio}),

@@ -1,6 +1,6 @@
 {
   "name": "postcss-aspect-ratio-polyfill",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "A PostCSS plugin to support aspect-ratio property.",
   "main": "index.js",
   "repository": {

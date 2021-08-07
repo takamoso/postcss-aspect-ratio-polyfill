@@ -1,6 +1,8 @@
 const np = require('number-precision')
 
 module.exports = () => {
+  np.enableBoundaryChecking(false);
+  
   return {
     postcssPlugin: 'postcss-aspect-ratio-polyfill',
     Declaration: {

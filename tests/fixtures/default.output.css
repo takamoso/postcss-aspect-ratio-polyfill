@@ -1,10 +1,15 @@
-.test::before {
-  float: left;
-  padding-top: 56.25%;
-  content: '';
+.test {
+  aspect-ratio: 16 / 9;
 }
-.test::after {
-  display: block;
-  content: '';
-  clear: both;
+@supports not (aspect-ratio: 1 / 1) {
+  .test::before {
+    float: left;
+    padding-top: 56.25%;
+    content: '';
+  }
+  .test::after {
+    display: block;
+    content: '';
+    clear: both;
+  }
 }

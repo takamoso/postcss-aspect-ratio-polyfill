@@ -1,16 +1,19 @@
 .aspect-ratio-box {
   position: relative;
   max-width: 500px;
+  aspect-ratio: 16 / 9;
 }
-.aspect-ratio-box::before {
-  float: left;
-  padding-top: 56.25%;
-  content: '';
-}
-.aspect-ratio-box::after {
-  display: block;
-  content: '';
-  clear: both;
+@supports not (aspect-ratio: 1 / 1) {
+  .aspect-ratio-box::before {
+    float: left;
+    padding-top: 56.25%;
+    content: '';
+  }
+  .aspect-ratio-box::after {
+    display: block;
+    content: '';
+    clear: both;
+  }
 }
 .aspect-ratio-box > img {
   position: absolute;

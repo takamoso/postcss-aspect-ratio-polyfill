@@ -1,4 +1,5 @@
 const np = require('number-precision')
+np.enableBoundaryChecking(false)
 
 module.exports = () => {
   return {
